@@ -9,10 +9,25 @@ public class Konyv {
 		ar *= (szazalek+100)/100;
 	}
 	
-	@Override
+	public Konyv(String cim, String szerzo, int ev, double ar) {
+		super();
+		this.cim = cim;
+		this.szerzo = szerzo;
+		this.ev = ev;
+		this.ar = ar;
+	}
 	
+	public Konyv(String cim, String szerzo) {
+		super();
+		this.cim = cim;
+		this.szerzo = szerzo;
+		this.ar = 2500;
+		this.ev = 2021;
+	}
+	
+	@Override	
 	public String toString() {
-		return "Könyv [cim=" + cim + ", szerzo=" + szerzo + ", ev=" + ev + ", ar=" + ar + "]";
+		return "Konyv [cim=" + cim + ", szerzo=" + szerzo + ", ev=" + ev + ", ar=" + ar + "]";
 	}
 
 	public String getCim() {
